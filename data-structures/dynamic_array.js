@@ -9,7 +9,7 @@ class DynamicArray extends StaticArray {
     if (index > this.size - 1) {
       this.resize(index - this.size + 1);
     }
-    super.get(index);
+    return super.get(index);
   }
 
   set(index, value) {
