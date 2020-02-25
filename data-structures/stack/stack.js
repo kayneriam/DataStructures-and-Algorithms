@@ -17,7 +17,7 @@ class Stack {
       throw new Error(`Stack is empty!`);
     } else {
       let target = this.body[--this.topItemIndex];
-      delete this.body[this.topItemIndex];
+      this.body.splice(this.topItemIndex, 1);
       return target;
     }
   }
