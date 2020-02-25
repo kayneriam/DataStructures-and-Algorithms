@@ -31,3 +31,5 @@ class Queue {
     return this.body.toString();
   }
 }
+
+module.exports = Queue;
